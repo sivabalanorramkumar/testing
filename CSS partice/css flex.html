@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main > div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            display: flex;
+            flex-shrink: 25%;
+            flex-wrap: wrap;
+        }
+        .main{
+            background-color: black;
+            display: flex;
+            justify-content: center ;     
+            gap: 30px; 
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="main">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>four</div>
+        <div>five</div>
+    </div>
 </body>
 </html>
