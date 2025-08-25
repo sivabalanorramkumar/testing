@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in js</title>
+</head>
+
+<body>
+    <label >Enter your name</label>
+    <input type="text" id="Name" onkeydown="Update()">
+    <button type="submit" >Submit</button>
+    <H2 id="DisplayName"></H2>
+</body>
+<script>
+    let name = document.getElementById("Name")
+    let display = document.getElementById("DisplayName")
+    function Update(){
+        display.innerHTML = name.value
+    }
+
+</script>
+</html>
